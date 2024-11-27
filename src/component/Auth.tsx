@@ -48,12 +48,12 @@ const Auth: React.FC = () => {
         return hashHex.substring(0, 32);
     };
 
-    const hashPassword = async (pwd: string): Promise<string> => {
-        const encoder = new TextEncoder();
-        const data = encoder.encode(pwd);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-        return arrayBufferToHex(hashBuffer);
-    };
+    // const hashPassword = async (pwd: string): Promise<string> => {
+    //     const encoder = new TextEncoder();
+    //     const data = encoder.encode(pwd);
+    //     const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    //     return arrayBufferToHex(hashBuffer);
+    // };
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();

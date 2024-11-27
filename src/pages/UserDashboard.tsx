@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Calendar, Search, Grid, List, Plus, Clock, Tag, Flag, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ClipboardList, LogOut } from "lucide-react"
 import ProfilePopup from '../component/ProfilePopup';
@@ -7,7 +7,6 @@ import { useAppSelector, useAppDispatch } from '../redux/store';
 import {
     addTask,
     deleteTask,
-    editTask,
     toggleTaskStatus,
 } from '../redux/taskSlice';
 import { Task, User } from '../types';

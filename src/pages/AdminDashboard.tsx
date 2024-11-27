@@ -9,11 +9,11 @@ import { AlertCircle, CheckCircle2, Clock, BarChart3, Group } from 'lucide-react
 import { RootState, Statistics, Task } from '../types';
 import { User2 } from "lucide-react"
 import { useNavigate } from 'react-router-dom';
-import { useAppSelector, useAppDispatch } from '../redux/store';
+import { useAppSelector } from '../redux/store';
 import TaskDetailPopup from '../component/TaskDetailPopup';
 import { User } from '../types';
 import {
-  LogOut, Plus, Trash2, Archive, Users, AlertTriangle, X,
+  LogOut, Trash2, Archive, Users, AlertTriangle, X,
 } from 'lucide-react';
 
 const GridComponent = () => {
@@ -184,7 +184,8 @@ const AdminDashboard: React.FC = () => {
   const { user } = useAppSelector(state => state.auth);
 
   const [profile, openProfile] = useState(false);
-  const currentDate = new Date();
+  console.log(profile);
+  // const currentDate = new Date();
 
   const [selectedTasks, setSelectedTasks] = useState<number[]>([]);
   const [showBulkActions, setShowBulkActions] = useState(false);
