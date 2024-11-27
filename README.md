@@ -112,4 +112,6 @@ The **Admin Panel** provides comprehensive management capabilities. Below are it
   ```bash
   npm run dev
 
+### Tutorial for the Application
+- [Tutorial Link](https://youtu.be/978mtlNrVdk)
 
